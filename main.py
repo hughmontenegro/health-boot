@@ -9,7 +9,7 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 
 @app.get("/")
 def read_root():
-    return {"status": "ok", "message": "Kazap está online!"}
+    return {"status": "ok", "message": "Pagina está online!"}
 
 # Página com seu chatbot
 @app.get("/chat")
