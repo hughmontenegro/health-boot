@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Kazap Saúde Inteligente</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      height: 100vh;
+      background: linear-gradient(to right, #f8fafc, #e0f2fe);
+    }
+    .info {
+      flex: 1;
+      padding: 50px;
+    }
+    .info h1 {
+      font-size: 2.5rem;
+      color: #0f172a;
+    }
+    .info p {
+      font-size: 1.2rem;
+      color: #334155;
+    }
+    .chat {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+      box-shadow: -10px 0 20px rgba(0, 0, 0, 0.05);
+    }
+    langflow-chat {
+      width: 100%;
+      height: 90%;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/gh/logspace-ai/langflow-embedded-chat@v1.0.7/dist/build/static/js/bundle.min.js"></script>
+</head>
+<body>
+  <div class="info">
+    <h1>Seu Atendimento Digital com Inteligência</h1>
+    <p>Agende consultas, tire dúvidas sobre especialidades e receba orientações de forma rápida e segura com o Kazap Chatboot.</p>
+    <img src="/img/robo.png" alt="Dr. Kazap robô médico" style="margin-top: 30px; width: 100%; max-width: 700px;">
+</div>
+  <div class="chat">
+    <langflow-chat
+      window_title="UPA ATENDIM"
+      flow_id="19921551-8a79-4f95-9660-4e60e77bbcf9"
+      host_url="https://hmontenegro-kazap-tech.hf.space">
+    </langflow-chat>
+  </div>
+</body>
+</html>
